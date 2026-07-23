@@ -1,0 +1,33 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# MkDocs
+site/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# CodeBuddy 项目数据（不要提交）
+.codebuddy/
+
+# 安装包/二进制文件
+*.exe
+*.msi
+
+# 临时文件
+*.tmp
+*.log

@@ -1,0 +1,154 @@
+site_name: 汽车总布置知识库
+site_url: https://your-username.github.io/auto-layout-kb/
+site_description: >-
+  面向汽车设计与总布置方向在校学生、初级工程师及自学者的系统性知识库，
+  涵盖整车参数、动力总成、底盘、车身、电气系统布置及实战案例。
+site_author: 个人知识库
+
+repo_url: https://github.com/your-username/auto-layout-kb
+repo_name: auto-layout-kb
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - navigation.path
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.action.view
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: 切换至浅色模式
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+  icon:
+    logo: material/car
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.png
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username/auto-layout-kb
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  # 如需显示文章更新日期，安装 Git 后可启用以下插件：
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: date
+  #     fallback_to_build_date: true
+
+nav:
+  - 首页: index.md
+  - 总布置基础:
+    - 概述: basics/overview.md
+    - 工作流程: basics/workflow.md
+    - 工程师职责: basics/responsibilities.md
+    - 法规与标准: basics/standards.md
+  - 整车参数:
+    - 尺寸参数: parameters/dimensions.md
+    - 质量参数: parameters/mass.md
+    - 性能参数: parameters/performance.md
+  - 动力总成布置:
+    - 发动机布置: powertrain/engine.md
+    - 电机布置: powertrain/motor.md
+    - 传动系统: powertrain/transmission.md
+  - 底盘系统布置:
+    - 悬架系统: chassis/suspension.md
+    - 转向系统: chassis/steering.md
+    - 制动系统: chassis/braking.md
+  - 车身布置:
+    - 乘员舱: body/cabin.md
+    - 人机工程: body/ergonomics.md
+    - 行李与储物: body/cargo.md
+  - 电气与新能源:
+    - 线束布置: electrical/wiring.md
+    - 电池布置: electrical/battery.md
+    - 热管理系统: electrical/thermal.md
+  - 总布置案例:
+    - 燃油轿车: cases/sedan.md
+    - SUV与MPV: cases/suv.md
+    - 纯电动平台: cases/ev.md
+  - 工具与资源:
+    - 软件工具: tools/software.md
+    - 学习资源: tools/learning.md
+    - 职业发展: tools/career.md
+  - 维护指南:
+    - 内容更新: maintain/update.md
+    - 部署发布: maintain/deploy.md
+    - 本地开发: maintain/develop.md
+  - 关于: about.md

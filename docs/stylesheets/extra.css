@@ -1,0 +1,59 @@
+/* 汽车总布置知识库 - 自定义样式 */
+
+/* 首页 Hero 区域 */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+  border-radius: 0.5rem;
+  color: var(--md-primary-bg-color);
+}
+
+.hero h1 {
+  color: var(--md-primary-bg-color);
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.hero .md-button {
+  margin: 0.5rem;
+}
+
+/* 卡片网格 */
+.grid.cards {
+  margin: 1.5rem 0;
+}
+
+.grid.cards > ul > li {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.grid.cards > ul > li:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* 表格优化 */
+.md-typeset table:not([class]) {
+  font-size: 0.85rem;
+  display: table;
+  width: 100%;
+}
+
+/* 代码块优化 */
+.md-typeset pre > code {
+  font-size: 0.85rem;
+}
+
+/* 内容区域最大宽度 */
+.md-grid {
+  max-width: 1440px;
+}
+
+/* 导航栏优化 */
+.md-nav--primary .md-nav__title {
+  font-weight: 700;
+}
