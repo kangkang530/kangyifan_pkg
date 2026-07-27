@@ -1,0 +1,386 @@
+/* ===== 对标数据库页面样式 ===== */
+
+/* 本页内容区加宽（仅含 #db-app 的页面） */
+.md-main:has(#db-app) .md-grid {
+  max-width: 92rem;
+}
+
+#db-app {
+  --db-primary: #A9D4DD;
+  --db-primary-hover: #8FC4CF;
+  --db-primary-light: #EAF5F7;
+  --db-accent: #D32F2F;
+  --db-text: #1f3a40;
+  --db-border: #c9dee2;
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+  color: var(--db-text);
+}
+
+/* 标题栏 */
+#db-app .db-title {
+  background: var(--db-primary);
+  color: var(--db-accent);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 6px;
+  padding: 10px 0;
+  border-radius: 6px;
+  margin: 0 0 24px;
+}
+
+/* ===== 参数筛选区 ===== */
+#db-app .db-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 40px;
+  margin-bottom: 8px;
+}
+#db-app .db-slot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 40%;
+  min-width: 380px;
+}
+#db-app .db-sel-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+#db-app .db-sel-wrap::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid var(--db-accent);
+  pointer-events: none;
+}
+#db-app .db-slot select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  background: var(--db-primary);
+  color: var(--db-accent);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 30px 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#db-app .db-slot select:focus {
+  outline: 2px solid #6FB3C0;
+}
+#db-app .db-slot select option:disabled {
+  color: #9db8bd;
+}
+#db-app .db-range {
+  width: 84px;
+  flex: none;
+  padding: 7px 8px;
+  font-size: 13px;
+  border: 1px solid var(--db-border);
+  border-radius: 6px;
+  background: #f4fafb;
+  color: var(--db-text);
+  text-align: center;
+}
+#db-app .db-range:focus {
+  outline: 2px solid #6FB3C0;
+}
+#db-app .db-range:disabled {
+  background: #eef2f3;
+  color: #aaa;
+}
+#db-app .db-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 6px 0 18px;
+}
+#db-app .db-filter-btn {
+  background: var(--db-primary);
+  color: var(--db-accent);
+  border: none;
+  border-radius: 6px;
+  padding: 9px 42px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: background .15s;
+}
+#db-app .db-filter-btn:hover {
+  background: var(--db-primary-hover);
+}
+#db-app .db-count {
+  font-size: 14px;
+  color: #4a7d88;
+}
+#db-app .db-status {
+  font-size: 14px;
+  color: var(--db-accent);
+  margin-bottom: 10px;
+}
+
+/* ===== 主内容区 ===== */
+#db-app .db-content {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+#db-app .db-table-wrap {
+  width: 52%;
+  overflow-x: auto;
+  border: 1px solid #d5e7ea;
+  border-radius: 4px;
+}
+#db-app .db-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13px;
+  display: table;
+}
+#db-app .db-table th,
+#db-app .db-table td {
+  border: 1px solid #d5e7ea;
+  padding: 7px 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+#db-app .db-table thead th {
+  background: var(--db-primary);
+  color: var(--db-text);
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+#db-app .db-table tbody th {
+  background: var(--db-primary-light);
+  color: var(--db-text);
+  font-weight: 600;
+  text-align: left;
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#db-app .db-table tbody tr:nth-child(odd) td {
+  background: #F2FAFB;
+}
+#db-app .db-table tbody tr:nth-child(even) td {
+  background: #FFFFFF;
+}
+#db-app .db-table .db-empty {
+  color: #999;
+  padding: 30px 0;
+}
+
+/* 图表区 */
+#db-app .db-chart-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+#db-app .db-chart-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#db-app .db-chart-tab {
+  padding: 5px 14px;
+  font-size: 13px;
+  border: 1px solid var(--db-primary);
+  border-radius: 5px;
+  background: #fff;
+  color: #4a7d88;
+  cursor: pointer;
+}
+#db-app .db-chart-tab.active {
+  background: var(--db-primary);
+  color: var(--db-text);
+  font-weight: 600;
+}
+#db-app .db-pie-sel {
+  padding: 5px 8px;
+  font-size: 13px;
+  border: 1px solid var(--db-border);
+  border-radius: 5px;
+  color: var(--db-text);
+  background: #fff;
+  max-width: 220px;
+}
+#db-app .db-chart-canvas {
+  flex: 1;
+  background: #F0F8FA;
+  border: 1px solid #d5e7ea;
+  border-radius: 4px;
+  min-height: 380px;
+  width: 100%;
+}
+#db-app .db-chart-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 380px;
+  color: #7fa8b2;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+/* ===== 弹出对话框 ===== */
+#db-app .db-modal-mask {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+}
+#db-app .db-modal-mask.show {
+  display: flex;
+}
+#db-app .db-modal {
+  background: #fff;
+  border-radius: 8px;
+  width: 520px;
+  max-width: 92vw;
+  max-height: 76vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+#db-app .db-modal-header {
+  background: var(--db-primary);
+  color: var(--db-text);
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 600;
+}
+#db-app .db-modal-tools {
+  display: flex;
+  gap: 10px;
+  padding: 10px 18px;
+  border-bottom: 1px solid #e3eff1;
+  align-items: center;
+}
+#db-app .db-modal-search {
+  flex: 1;
+  padding: 7px 10px;
+  font-size: 13px;
+  border: 1px solid var(--db-border);
+  border-radius: 6px;
+  background: #f4fafb;
+  color: var(--db-text);
+}
+#db-app .db-modal-search:focus {
+  outline: 2px solid #6FB3C0;
+}
+#db-app .db-tool-btn {
+  padding: 6px 14px;
+  font-size: 13px;
+  border: 1px solid var(--db-primary);
+  border-radius: 5px;
+  background: #fff;
+  color: #4a7d88;
+  cursor: pointer;
+  white-space: nowrap;
+}
+#db-app .db-tool-btn:hover {
+  background: var(--db-primary-light);
+}
+#db-app .db-modal-body {
+  padding: 8px 18px;
+  overflow-y: auto;
+  flex: 1;
+}
+#db-app .db-modal-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 4px;
+  font-size: 14px;
+  cursor: pointer;
+  border-bottom: 1px solid #eef5f6;
+  color: var(--db-text);
+}
+#db-app .db-modal-item:hover {
+  background: #f4fafb;
+}
+#db-app .db-modal-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #4a9baa;
+  cursor: pointer;
+  flex: none;
+}
+#db-app .db-modal-item .db-code {
+  color: #4a9baa;
+  font-size: 12px;
+  font-style: normal;
+  margin-left: 6px;
+}
+#db-app .db-modal-item .db-text-tag {
+  color: #b0722a;
+  font-size: 12px;
+  margin-left: 6px;
+}
+#db-app .db-modal-item.db-is-slot {
+  background: #eef7f9;
+}
+#db-app .db-modal-item.db-is-slot .db-slot-tag {
+  color: var(--db-accent);
+  font-size: 12px;
+  margin-left: 6px;
+}
+#db-app .db-modal-footer {
+  padding: 12px 18px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  border-top: 1px solid #e3eff1;
+}
+#db-app .db-modal-footer button {
+  padding: 7px 26px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+#db-app .db-btn-ok {
+  background: var(--db-primary);
+  color: var(--db-text);
+  font-weight: 600;
+}
+#db-app .db-btn-ok:hover {
+  background: var(--db-primary-hover);
+}
+#db-app .db-btn-cancel {
+  background: #eef2f3;
+  color: #666;
+}
+#db-app .db-btn-cancel:hover {
+  background: #dde5e7;
+}
+
+/* 窄屏适配 */
+@media (max-width: 1100px) {
+  #db-app .db-content {
+    flex-direction: column;
+  }
+  #db-app .db-table-wrap {
+    width: 100%;
+  }
+}
