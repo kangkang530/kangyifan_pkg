@@ -1,16 +1,20 @@
 site_name: 汽车总布置知识库
-site_url: https://your-username.github.io/auto-layout-kb/
+site_url: https://kangkang530.github.io/kangyifan_pkg/
 site_description: >-
   面向汽车设计与总布置方向在校学生、初级工程师及自学者的系统性知识库，
   涵盖整车参数、动力总成、底盘、车身、电气系统布置及实战案例。
 site_author: 个人知识库
 
-repo_url: https://github.com/your-username/auto-layout-kb
-repo_name: auto-layout-kb
+repo_url: https://github.com/kangkang530/kangyifan_pkg
+repo_name: kangkang530/kangyifan_pkg
 edit_uri: edit/main/docs/
 
 docs_dir: docs
 site_dir: site
+
+# 排除 Office 临时锁文件（~$ 开头），避免 PPT 打开时构建报权限错误
+exclude_docs: |
+  ~$*
 
 theme:
   name: material
@@ -64,6 +68,10 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/benchmark.css
+
+extra_javascript:
+  - javascripts/benchmark.js
 
 markdown_extensions:
   - abbr
@@ -123,6 +131,7 @@ nav:
     - 尺寸参数: parameters/dimensions.md
     - 质量参数: parameters/mass.md
     - 性能参数: parameters/performance.md
+    - 对标数据库: parameters/benchmark.md
   - 动力总成布置:
     - 发动机布置: powertrain/engine.md
     - 电机布置: powertrain/motor.md
