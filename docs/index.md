@@ -4,13 +4,13 @@ hide:
   - toc
 ---
 
-# 汽车总布置知识库
+# 乘用车上车体总布置知识库
 
 <div class="hero" markdown>
 
-# 🚗 汽车总布置知识库
+# 🚗 乘用车上车体知识库
 
-**系统化整理汽车总布置设计知识，面向在校学生、初级工程师与自学者**
+**系统化整理乘用车上车体设计知识，面向在校学生、初级工程师与自学者**
 
 [开始阅读](basics/overview.md){ .md-button .md-button--primary }
 [总布置案例](cases/sedan.md){ .md-button }
@@ -40,19 +40,19 @@ hide:
 
     [:octicons-arrow-right-24: 查看参数](parameters/dimensions.md)
 
-- :material-engine: **动力总成布置**
+- :IP&CNSL area: **IP&CNSL区域总布置**
 
     ---
 
-    发动机、电机、传动系统的空间布置与接口协调。
+    仪表&副仪表区域的零部件布置及校核标准。
 
     [:octicons-arrow-right-24: 查看动力](powertrain/engine.md)
 
-- :material-car-cog: **底盘系统布置**
+- :DOOR&PILLAR&ROOF area: **门板&立柱&顶棚区域总布置**
 
     ---
 
-    悬架、转向、制动系统的硬点设计与空间协调。
+    门板&立柱&顶棚区域的零部件布置及校核标准。
 
     [:octicons-arrow-right-24: 查看底盘](chassis/suspension.md)
 
@@ -60,27 +60,27 @@ hide:
 
 <div class="grid cards" markdown>
 
-- :material-car-seat: **车身布置**
+- :FRONT&REAR area: **前后端区域总布置**
 
     ---
 
-    乘员舱、人机工程、行李舱的空间规划与舒适性设计。
+    前后端区域的零部件布置及校核标准。
 
     [:octicons-arrow-right-24: 查看车身](body/cabin.md)
 
-- :material-battery-charging: **电气与新能源**
+- :Ergoniomic Comfort Standards: **人机舒适性标准**
 
     ---
 
-    线束、高压电池、热管理系统的布置要点与安全规范。
+    人机舒适性要求及校核方法。
 
     [:octicons-arrow-right-24: 查看电气](electrical/wiring.md)
 
-- :material-folder-multiple-image: **总布置案例**
+- :SECTIONS: **整车断面**
 
     ---
 
-    轿车、SUV、纯电动平台的真实总布置方案拆解。
+    断面开发流程、方法。
 
     [:octicons-arrow-right-24: 查看案例](cases/sedan.md)
 
@@ -109,7 +109,7 @@ hide:
 |------|------|
 | 在校学生 | 建立总布置知识体系，为求职做准备 |
 | 初级工程师 | 快速上手工作，理解各系统协调关系 |
-| 转行/自学者 | 系统了解汽车总布置，少走弯路 |
+| 转行/自学者 | 系统了解乘用车上车体，少走弯路 |
 | 资深工程师 | 作为知识备份与输出，便于回顾查阅 |
 
 ---
