@@ -40,7 +40,7 @@ hide:
 
     [:octicons-arrow-right-24: 查看参数](parameters/dimensions.md)
 
-- :IP&CNSL area: **IP&CNSL区域总布置**
+- :material-monitor-dashboard: **IP&CNSL区域总布置**
 
     ---
 
@@ -48,7 +48,7 @@ hide:
 
     [:octicons-arrow-right-24: 查看动力](powertrain/engine.md)
 
-- :DOOR&PILLAR&ROOF area: **门板&立柱&顶棚区域总布置**
+- :material-car-door: **门板&立柱&顶棚区域总布置**
 
     ---
 
@@ -60,7 +60,7 @@ hide:
 
 <div class="grid cards" markdown>
 
-- :FRONT&REAR area: **前后端区域总布置**
+- :material-car-hatchback: **前后端区域总布置**
 
     ---
 
@@ -68,7 +68,7 @@ hide:
 
     [:octicons-arrow-right-24: 查看车身](body/cabin.md)
 
-- :Ergoniomic Comfort Standards: **人机舒适性标准**
+- :material-seat-recline-normal: **人机舒适性标准**
 
     ---
 
@@ -76,7 +76,7 @@ hide:
 
     [:octicons-arrow-right-24: 查看电气](electrical/wiring.md)
 
-- :SECTIONS: **整车断面**
+- :material-layers-triple: **整车断面**
 
     ---
 
