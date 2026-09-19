@@ -2,126 +2,206 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/about/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/basics/overview/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/basics/responsibilities/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/basics/standards/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/basics/workflow/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/body/cabin/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/body/cargo/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/body/ergonomics/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/cases/ev/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/cases/sedan/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/cases/suv/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/chassis/braking/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/chassis/steering/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/chassis/suspension/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/door-trim/check/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/door-trim/door/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/door-trim/pillar/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/door-trim/roof/</loc>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/electrical/battery/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/electrical/thermal/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/electrical/wiring/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/ergonomics/comfort/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/ergonomics/posture/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/ergonomics/reach/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/ergonomics/vision/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/front-rear/check/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/front-rear/front/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/front-rear/rear/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/ip-cnsl/check/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/ip-cnsl/cnsl/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/ip-cnsl/ip/</loc>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/maintain/deploy/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/maintain/develop/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/maintain/update/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/parameters/benchmark/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/parameters/dimensions/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/parameters/mass/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/parameters/performance/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/powertrain/engine/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/powertrain/motor/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/powertrain/transmission/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/process/deliverables/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/process/milestones/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/process/overview/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/sections/library/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/sections/method/</loc>
+         <lastmod>2026-09-19</lastmod>
+    </url>
+    <url>
+         <loc>https://kangkang530.github.io/kangyifan_pkg/sections/process/</loc>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/tools/career/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/tools/learning/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
     <url>
          <loc>https://kangkang530.github.io/kangyifan_pkg/tools/software/</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-09-19</lastmod>
     </url>
 </urlset>

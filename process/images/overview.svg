@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" rx="16" fill="#eef1fb"/>
+  <rect x="40" y="40" width="720" height="320" rx="12" fill="#ffffff" stroke="#c5cae9" stroke-width="2"/>
+  <rect x="100" y="170" width="120" height="56" rx="10" fill="#5c6bc0"/>
+  <rect x="265" y="170" width="120" height="56" rx="10" fill="#7986cb"/>
+  <rect x="430" y="170" width="120" height="56" rx="10" fill="#5c6bc0"/>
+  <rect x="595" y="170" width="105" height="56" rx="10" fill="#3949ab"/>
+  <line x1="220" y1="198" x2="265" y2="198" stroke="#3f51b5" stroke-width="4"/>
+  <path d="M255 190 L270 198 L255 206 Z" fill="#3f51b5"/>
+  <line x1="385" y1="198" x2="430" y2="198" stroke="#3f51b5" stroke-width="4"/>
+  <path d="M420 190 L435 198 L420 206 Z" fill="#3f51b5"/>
+  <line x1="550" y1="198" x2="595" y2="198" stroke="#3f51b5" stroke-width="4"/>
+  <path d="M585 190 L600 198 L585 206 Z" fill="#3f51b5"/>
+  <text x="160" y="203" font-family="sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">概念</text>
+  <text x="325" y="203" font-family="sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">设计</text>
+  <text x="490" y="203" font-family="sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">验证</text>
+  <text x="647" y="203" font-family="sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">量产</text>
+  <text x="400" y="96" font-family="sans-serif" font-size="30" font-weight="bold" fill="#3f51b5" text-anchor="middle">整车开发流程示意图</text>
+  <text x="400" y="330" font-family="sans-serif" font-size="18" fill="#7986cb" text-anchor="middle">阶段划分 · 阀点管理</text>
+</svg>

@@ -1,0 +1,3456 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="面向汽车设计与总布置方向在校学生、初级工程师及自学者的系统性知识库， 涵盖上车体总布置基础、整车参数、IP&CNSL、门板立柱顶棚、前后端区域、 人机舒适性、整车断面与整车开发流程。">
+      
+      
+        <meta name="author" content="个人知识库">
+      
+      
+        <link rel="canonical" href="https://kangkang530.github.io/kangyifan_pkg/ergonomics/posture/">
+      
+      
+        <link rel="prev" href="../../front-rear/check/">
+      
+      
+        <link rel="next" href="../reach/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>坐姿与H点 - 乘用车上车体总布置知识库</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/benchmark.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/auth.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#h" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="乘用车上车体总布置知识库" class="md-header__button md-logo" aria-label="乘用车上车体总布置知识库" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m5 11 1.5-4.5h11L19 11m-1.5 5a1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5 1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5m-11 0A1.5 1.5 0 0 1 5 14.5 1.5 1.5 0 0 1 6.5 13 1.5 1.5 0 0 1 8 14.5 1.5 1.5 0 0 1 6.5 16M18.92 6c-.2-.58-.76-1-1.42-1h-11c-.66 0-1.22.42-1.42 1L3 12v8a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h12v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-8z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            乘用车上车体总布置知识库
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              坐姿与H点
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="切换至深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="切换至浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kangkang530/kangyifan_pkg" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kangkang530/kangyifan_pkg
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../basics/overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  上车体总布置基础
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../parameters/dimensions/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  整车参数
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ip-cnsl/ip/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  IP&CNSL 区域总布置
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../door-trim/door/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  门板&立柱&顶棚区域总布置
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../front-rear/front/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  前后端区域总布置
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  人机舒适性标准
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../sections/process/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  整车断面
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../process/overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  整车开发流程
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tools/software/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  工具与资源
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../maintain/update/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  维护指南
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  关于
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="乘用车上车体总布置知识库" class="md-nav__button md-logo" aria-label="乘用车上车体总布置知识库" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m5 11 1.5-4.5h11L19 11m-1.5 5a1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5 1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5m-11 0A1.5 1.5 0 0 1 5 14.5 1.5 1.5 0 0 1 6.5 13 1.5 1.5 0 0 1 8 14.5 1.5 1.5 0 0 1 6.5 16M18.92 6c-.2-.58-.76-1-1.42-1h-11c-.66 0-1.22.42-1.42 1L3 12v8a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h12v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-8z"/></svg>
+
+    </a>
+    乘用车上车体总布置知识库
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kangkang530/kangyifan_pkg" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kangkang530/kangyifan_pkg
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    上车体总布置基础
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    上车体总布置基础
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工作流程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/responsibilities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工程师职责
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    法规与标准
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    整车参数
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    整车参数
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parameters/dimensions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    尺寸参数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parameters/mass/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    质量参数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parameters/performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    性能参数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parameters/benchmark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    对标数据库
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IP&CNSL 区域总布置
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    IP&CNSL 区域总布置
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ip-cnsl/ip/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IP 布置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ip-cnsl/cnsl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CNSL 布置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ip-cnsl/check/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    校核标准
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    门板&立柱&顶棚区域总布置
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    门板&立柱&顶棚区域总布置
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../door-trim/door/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    门板布置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../door-trim/pillar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    立柱布置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../door-trim/roof/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    顶棚布置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../door-trim/check/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    校核标准
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前后端区域总布置
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    前后端区域总布置
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../front-rear/front/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前端区域
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../front-rear/rear/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    后端区域
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../front-rear/check/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    校核标准
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人机舒适性标准
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    人机舒适性标准
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    坐姿与H点
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    坐姿与H点
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        人机布置基准体系
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        概述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="概述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        要点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H 点定义与定位
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="H 点定义与定位">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        要点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        坐姿角度设计
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="坐姿角度设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        要点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        百分位人体应用
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="百分位人体应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        要点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        待人工补充
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下一步阅读
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    操作可达性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    视野校核
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comfort/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    空间与进出便利性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    整车断面
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    整车断面
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sections/process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    断面开发流程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sections/method/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    断面设计方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sections/library/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    典型断面清单
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    整车开发流程
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    整车开发流程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../process/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    流程概述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../process/milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    关键里程碑
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../process/deliverables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    阶段交付物
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工具与资源
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    工具与资源
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    软件工具
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    学习资源
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/career/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    职业发展
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    维护指南
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    维护指南
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/update/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    内容更新
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/deploy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    部署发布
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/develop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    本地开发
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    关于
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        人机布置基准体系
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        概述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="概述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        要点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H 点定义与定位
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="H 点定义与定位">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        要点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        坐姿角度设计
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="坐姿角度设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        要点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        百分位人体应用
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="百分位人体应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        要点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        待人工补充
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下一步阅读
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="导航栏" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    首页
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    人机舒适性标准
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/kangkang530/kangyifan_pkg/edit/main/docs/ergonomics/posture.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/kangkang530/kangyifan_pkg/raw/main/docs/ergonomics/posture.md" title="查看本页的源代码" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="h">坐姿与 H 点<a class="headerlink" href="#h" title="Permanent link">&para;</a></h1>
+<div class="admonition quote">
+<p class="admonition-title">内容来源</p>
+<p>本页正文抽取自《总布置》知识库中**可文本解析**的文件：
+<code>SJ 6-2008 驾驶员人机硬点设计规范</code>、<code>SJ 7-2008 前方视野设计规范</code>、
+<code>SJ 9-2008 A类汽车眼椭球、头部包络面设计规范</code>、<code>SJ 26-2008 座椅及座椅安全带设计指导书</code>、
+<code>QCD-A0-005 概念草图阶段总布置检查规范</code>。
+企业规范编号（SJ/AEM/EDD/QCD/H20/ZBZ）原样保留，便于回到知识库对号入座。</p>
+</div>
+<h2 id="_1">人机布置基准体系<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+  N0["坐姿与 H 点&lt;br/&gt;基准体系"]
+  N1["足部基准"]
+  N0 --&gt; N1
+  N2["AHP 加速踏板踵点"]
+  N1 --&gt; N2
+  N3["PRP 踏板参考点 距AHP 200mm"]
+  N1 --&gt; N3
+  N4["BOF 脚部基准"]
+  N1 --&gt; N4
+  N5["APA 踏板角 86-0.072H30"]
+  N1 --&gt; N5
+  N6["躯干基准"]
+  N0 --&gt; N6
+  N7["H 点 设计H点 实际H点"]
+  N6 --&gt; N7
+  N8["SgRP 座椅参考点 R点"]
+  N6 --&gt; N8
+  N9["A40 靠背角"]
+  N6 --&gt; N9
+  N10["A42 躯干大腿夹角"]
+  N6 --&gt; N10
+  N11["A44 膝角"]
+  N6 --&gt; N11
+  N12["A46 足角"]
+  N6 --&gt; N12
+  N13["视野基准"]
+  N0 --&gt; N13
+  N14["V1 V2 点"]
+  N13 --&gt; N14
+  N15["P1 P2 Pm 点"]
+  N13 --&gt; N15
+  N16["E1 E2 E3 E4 眼点"]
+  N13 --&gt; N16
+  N17["眼椭球 95 99"]
+  N13 --&gt; N17
+  N18["空间工具"]
+  N0 --&gt; N18
+  N19["头部包络面"]
+  N18 --&gt; N19
+  N20["最小头部间隙 W27 W35 H35"]
+  N18 --&gt; N20
+  N21["有效头部空间 H61"]
+  N18 --&gt; N21</code></pre>
+<h2 id="_2">概述<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">要点<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>坐姿与 H 点是**车内一切人机尺寸的原点**：座椅、方向盘、踏板、后视镜、顶棚、A 柱盲区全部以它为基准展开。阿尔特企业标准体系把这条主线拆成三份互为引用的规范：</p>
+<table>
+<thead>
+<tr>
+<th>规范</th>
+<th>定位</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SJ 6-2008 驾驶员人机硬点设计规范</code></td>
+<td>定**基准点**：AHP / PRP / SgRP / 转向盘中心 / EO 点</td>
+<td>人机硬点坐标</td>
+</tr>
+<tr>
+<td><code>SJ 7-2008 前方视野设计规范</code></td>
+<td>定**视野基准**：V 点 / P 点 / E 点</td>
+<td>A 柱障碍角、上下视野</td>
+</tr>
+<tr>
+<td><code>SJ 9-2008 A类汽车眼椭球、头部包络面设计规范</code></td>
+<td>定**空间工具**：眼椭球 / 头部包络面</td>
+<td>头部间隙、顶棚高度</td>
+</tr>
+</tbody>
+</table>
+<p>三者共同的输入是 <strong>H30</strong>（R 点到 AHP 的 Z 向距离）与 <strong>A40</strong>（靠背角）。</p>
+<h3 id="_4">示例<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>整套基准的起点是一组**足部参考点**：由 H30 算出 APA，再定出 AHP 与 PRP，后续 SgRP 曲线、转向盘中心、EO 点全部由此推出。</p>
+<p><img alt="SJ 6-2008 第2页：图1 足部参考点（AHP、PRP、BOF、APA 与地毯压缩面的几何关系）" src="../images/sj06-p05.png" /></p>
+<h3 id="_5">注意事项<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>基准点之间存在**强耦合**：改动 H30 会同时改变 APA、转向盘中心、EO 点、眼椭球与头部包络面定位，进而影响 A 柱障碍角与视野校核，必须整链重算，不能只改一处。</li>
+<li><code>SJ 6-2008</code> 与 <code>SJ 9-2008</code> 都规定适用于 <strong>A 类汽车</strong>（定义见下），不适用于方向盘大、坐姿高的商用车。</li>
+</ul>
+<h2 id="h_1">H 点定义与定位<a class="headerlink" href="#h_1" title="Permanent link">&para;</a></h2>
+<h3 id="_6">要点<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p><strong>（1）四个关键点的定义</strong>（<code>SJ 26-2008</code> §3、<code>SJ 6-2008</code> §3）</p>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>定义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>臀点 H Point</td>
+<td>三维 H 点装置躯干与大腿的铰接中心，位于装置两侧 H 点标记钮的中心线上；分**设计 H 点**与**实际 H 点**</td>
+</tr>
+<tr>
+<td>座椅参考点 SgRP</td>
+<td>一个指定的座椅位置上的臀点，每个座椅**唯一**；即通常所称的驾驶员 R 点</td>
+</tr>
+<tr>
+<td>踵点 AHP</td>
+<td>标准假人脚部模块正确安放后，在**受压缩的地毯**上与其足跟点对应的点</td>
+</tr>
+<tr>
+<td>踏板参考点 PRP</td>
+<td>加速踏板横向中心线上、距踵点 <strong>200 mm</strong> 的点，是设计过程中的重要参考点</td>
+</tr>
+<tr>
+<td>实际座椅靠背角</td>
+<td>座椅处于**最低和最后位置**时，过 H 点的铅垂线与三维 H 点装置躯干线之间的夹角（理论上等于设计靠背角）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>（2）AHP、SgRP、PRP 的确定顺序</strong>（<code>SJ 6-2008</code> §4.1）</p>
+<ol>
+<li>初步定义 <strong>H30</strong>；</li>
+<li>
+<p>由下式计算 <strong>APA</strong>（加速踏板角）：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>APA(°) = 86 - 0.072 × H30
+</span></code></pre></div>
+</li>
+<li>
+<p>使足跟点落在基准平面上，加速踏板平面与踏板相切且踏板角等于 APA。此位置的足跟点为 <strong>AHP</strong>；在踏板平面内、距 AHP 沿踏板横向中心线切线 <strong>200 mm</strong> 的点即为 <strong>PRP</strong>；</p>
+</li>
+<li>按各百分位人体的 SgRP 公式绘制 <strong>SgRP 曲线</strong>（绘制方法见 <code>Q/IAT·SJ 12  A类汽车驾驶员适意位置线设计规范</code>）；</li>
+<li>在**第 95 百分位人体适意曲线与 H 点范围的交线**上选定 SgRP（特殊情况可按客户要求或实际选用第 50 百分位曲线上的交点）；</li>
+<li>若受座椅布置影响找不到 H 点轨迹与 SgRP 曲线的匹配区域，则**重新选定 H30 并重复上述步骤**——这是"坐姿与座椅布置相互迭代"的典型环节。</li>
+</ol>
+<p><strong>（3）A 类汽车的判定</strong>（<code>SJ 6-2008</code> §3.1，依据 SAE J1100 JUL2002）</p>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th>范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SgRP 到踵点垂直距离 H30-1</td>
+<td>127～405 mm</td>
+</tr>
+<tr>
+<td>H 点垂直行程 TH17</td>
+<td>0～50 mm</td>
+</tr>
+<tr>
+<td>座椅水平行程 TL23</td>
+<td>&gt; 100 mm</td>
+</tr>
+<tr>
+<td>转向盘直径 W9</td>
+<td>&lt; 450 mm</td>
+</tr>
+<tr>
+<td>靠背角 A40-1</td>
+<td>5～40°</td>
+</tr>
+</tbody>
+</table>
+<p><strong>（4）V 点、P 点与 E 点</strong>（<code>SJ 7-2008</code> §4.3～4.5）</p>
+<p>设计座椅靠背角为 <strong>25°</strong> 时的基本坐标（相对 R 点，mm）：</p>
+<table>
+<thead>
+<tr>
+<th>点</th>
+<th>X</th>
+<th>Y</th>
+<th>Z</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1 点</td>
+<td>68</td>
+<td>-5</td>
+<td>665</td>
+</tr>
+<tr>
+<td>V2 点</td>
+<td>68</td>
+<td>-5</td>
+<td>589</td>
+</tr>
+<tr>
+<td>P1 点</td>
+<td>36</td>
+<td>-20</td>
+<td>627</td>
+</tr>
+<tr>
+<td>P2 点</td>
+<td>63</td>
+<td>47</td>
+<td>627</td>
+</tr>
+<tr>
+<td>PM 点</td>
+<td>43.36</td>
+<td>0</td>
+<td>627</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>靠背角不是 25° 时，各 V、P 点的 X/Z 坐标须按 <code>SJ 7-2008</code> 表 4 修正；</li>
+<li>座椅水平调节范围超过 108 mm 时，P 点 X 坐标另有校正值（108～120 mm 取 -13，121～132 mm 取 -22，133～145 mm 取 -32，146～158 mm 取 -42，158 mm 以上取 -48）；</li>
+<li>E 点与 P 点**在同一水平面内**：E1、E2 距 P1 各 <strong>104 mm</strong>，E1 距 E2 为 <strong>65 mm</strong>；E3、E4 距 P2 各 104 mm，E3 距 E4 为 65 mm；</li>
+<li><strong>A 柱的定义</strong>：位于 V 点前 <strong>68 mm</strong> 处横向铅垂平面以前的任何车顶支撑（不透明零件），如门框、风窗玻璃镶条、支撑附件等。</li>
+</ul>
+<h3 id="_7">示例<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>由 H30 推出转向盘中心点与 EO 点的位置，是"先定坐姿、再定操纵件"的直接体现：</p>
+<p><img alt="SJ 6-2008 第4页：图4 EO 点、转向盘中心点位置示意（WX/WZ/Wa 与 AHP 的关系）" src="../images/sj06-p07.png" /></p>
+<h3 id="_8">注意事项<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>设计 H 点 ≠ 实际 H 点</strong>：设计 H 点由 CAD 工具按程序建立，实际 H 点由 3D-H 装置在实车上测得；两者偏差是座椅布置的验收项之一。</li>
+<li>SgRP 是"座椅调至最后、最下位置"的胯点，是定义尺寸的基准；**不要**用乘员常用位置代替。</li>
+<li>实际座椅靠背角理论上等于设计靠背角，实测偏差需在座椅认可阶段确认。</li>
+</ul>
+<h2 id="_9">坐姿角度设计<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="_10">要点<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p><strong>（1）推荐角度范围</strong>（<code>QCD-A0-005</code> 表 1、<code>SJ 26-2008</code> §5）</p>
+<table>
+<thead>
+<tr>
+<th>角度</th>
+<th>H30 (mm)</th>
+<th>A40 (°)</th>
+<th>A42 (°)</th>
+<th>A44 (°)</th>
+<th>A46 (°)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>推荐范围</td>
+<td>220–350</td>
+<td>22–28</td>
+<td>85–105</td>
+<td>110–125</td>
+<td>87（±2）</td>
+</tr>
+</tbody>
+</table>
+<p>H30 按车型级别取值：</p>
+<table>
+<thead>
+<tr>
+<th>车型级别</th>
+<th>轿跑</th>
+<th>B 级车</th>
+<th>A 级车</th>
+<th>A0 级车</th>
+<th>A00 级车</th>
+<th>SUV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H30 (mm)</td>
+<td>220–240</td>
+<td>230–270</td>
+<td>280–310</td>
+<td>300–330</td>
+<td>320–350</td>
+<td>320–350</td>
+</tr>
+</tbody>
+</table>
+<p><strong>（2）由 H30 派生的操纵件位置公式</strong>（<code>SJ 6-2008</code> §4.2～4.5）</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>公式 / 要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>转向盘中心相对 AHP 的 X 向距离</td>
+<td><code>WX = 676 - 0.786 × H30</code></td>
+</tr>
+<tr>
+<td>转向盘中心相对 AHP 的 Z 向距离</td>
+<td><code>WZ = 1063 - 0.903 × WX</code></td>
+</tr>
+<tr>
+<td>转向盘倾角</td>
+<td><code>Wa = 0.08 × H30 + 3</code></td>
+</tr>
+<tr>
+<td>EO 点相对踵点的 X 向距离</td>
+<td><code>EOX = 1208 - 0.8917 × H30</code></td>
+</tr>
+<tr>
+<td>EO 点相对踵点的 Z 向距离</td>
+<td><code>EOZ = 1574 - 0.9818 × EOX</code></td>
+</tr>
+<tr>
+<td>EO 点 Y 向位置</td>
+<td><code>EOy = SgRPy ± 135</code></td>
+</tr>
+<tr>
+<td>空挡换挡操作点</td>
+<td>与 EO 点距离 530～580 mm，<strong>推荐 555 mm</strong></td>
+</tr>
+<tr>
+<td>驻车制动操作点</td>
+<td>与 EO 点距离 550～670 mm，<strong>推荐 595～640 mm</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>（3）座椅与人体生理角度的配合</strong>（<code>SJ 26-2008</code> §5.2）</p>
+<ul>
+<li><strong>两点支撑原则</strong>：靠背要能合理支撑**肩部**与**腰部**——肩靠设在第 **5、6 胸椎**之间，可减轻颈曲变形；腰靠支撑在第 **2、3 腰椎**上，保证腰曲弧线呈正常形状；头枕用于支撑头部；</li>
+<li><strong>体压分布</strong>：体重应以较大支承面积、较小压力**合理而非平均**地分布在坐垫与靠背上；坐垫上坐骨部分压力最高、向臀部外围逐渐降低至大腿下平面最低值；靠背上肩胛骨与腰椎骨两部分压力最高（即"两点支承"位置）；</li>
+<li>头枕与靠背的间距：**高度不可调**头枕不大于 <strong>60 mm</strong>；**高度可调**头枕在调至最低位置时不大于 <strong>25 mm</strong>（GB 15083-2006）；</li>
+<li>座椅安装螺栓通常为 <strong>M10</strong>。</li>
+</ul>
+<h3 id="_11">示例<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>典型项目的人机硬点实测统计（<code>SJ 6-2008</code> 附录 A，选取部分车型）：</p>
+<table>
+<thead>
+<tr>
+<th>车型</th>
+<th>轴距 (mm)</th>
+<th>H30 (mm)</th>
+<th>W20 (mm)</th>
+<th>APA (°)</th>
+<th>转向盘角度 (°)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S21 三厢轿车</td>
+<td>2340</td>
+<td>300</td>
+<td>-345</td>
+<td>48</td>
+<td>25</td>
+</tr>
+<tr>
+<td>X121 三厢轿车</td>
+<td>2440</td>
+<td>308</td>
+<td>-340</td>
+<td>56</td>
+<td>27</td>
+</tr>
+<tr>
+<td>A230 三厢轿车</td>
+<td>2600</td>
+<td>252</td>
+<td>-355</td>
+<td>60</td>
+<td>24</td>
+</tr>
+<tr>
+<td>V221 三厢轿车</td>
+<td>2550</td>
+<td>307</td>
+<td>-330</td>
+<td>58</td>
+<td>26</td>
+</tr>
+<tr>
+<td>M2 两厢轿车</td>
+<td>2500</td>
+<td>290</td>
+<td>-330</td>
+<td>60</td>
+<td>21</td>
+</tr>
+<tr>
+<td>S22 MPV</td>
+<td>2625</td>
+<td>310</td>
+<td>-345</td>
+<td>50</td>
+<td>25</td>
+</tr>
+<tr>
+<td>X8 SUV</td>
+<td>2760</td>
+<td>285</td>
+<td>-375</td>
+<td>61</td>
+<td>26</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>上表可直接作为新项目"坐姿对标"的参照区间：H30 落在 252～310 mm，APA 落在 48～61°，转向盘倾角 21～27°。</p>
+</blockquote>
+<h3 id="_12">注意事项<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>长途驾驶疲劳与坐姿强相关，**A44（膝角）过小**是最常见的疲劳来源；<code>QCD-A0-005</code> 专门给出降级规则（见下节）。</li>
+<li>H30 越大（坐姿越"直"），方向盘倾角 Wa 越大、转向盘中心越靠前，会挤压腿部空间——<strong>H30 不是可以单独调优的参数</strong>。</li>
+<li>靠背角 A40 直接参与 V 点/P 点坐标修正，<strong>先冻结 A40 再算视野</strong>，可避免返工。</li>
+</ul>
+<h2 id="_13">百分位人体应用<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<h3 id="_14">要点<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p><strong>（1）基础人体模型的选取规则</strong>（<code>QCD-A0-005</code> §4.2）</p>
+<ul>
+<li>前排驾驶员和后排乘客**尽量考虑 SAE 95% 假人**的空间，优先保证驾驶员舒适性；</li>
+<li>若后排乘客 <strong>A44 &lt; 85°</strong>，建议后排乘客定义为 <strong>SAE 50%</strong> 假人；</li>
+<li>若后排乘客 50% 假人的 A44 仍 &lt; 85°，建议后排乘客定义为 <strong>SAE 5% 女性假人</strong>。</li>
+</ul>
+<p><strong>（2）眼椭球的百分位与含义</strong>（<code>SJ 9-2008</code> §5.1）</p>
+<ul>
+<li>SAE 通过对 2300 多名男女驾驶员的试验测定与统计分析得出：驾驶员眼睛位置在**纵向垂直面和水平面**上的分布范围均呈椭圆形，即眼椭圆（Eye Ellipse），分第 90、95、99 百分位等；</li>
+<li>百分位由**视切比**定义：若一条切线切在第 P 百分位的眼椭圆上，则落在切线含眼椭圆一侧的眼睛百分比为 <strong>P%</strong>，另一侧为 (100−P)%；即"看到该目标的驾驶员眼睛数占眼睛总数的 P%"。</li>
+</ul>
+<p><strong>（3）眼椭球的轴长与定位</strong>（<code>SJ 9-2008</code> §5.2）</p>
+<p>轴长按座椅调节行程 TL1 选取（mm）：</p>
+<table>
+<thead>
+<tr>
+<th>座椅行程 TL1</th>
+<th>百分位</th>
+<th>X 轴长</th>
+<th>Y 轴长</th>
+<th>Z 轴长</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&gt; 133</td>
+<td>95%</td>
+<td>206.4</td>
+<td>60.3</td>
+<td>93.4</td>
+</tr>
+<tr>
+<td>&gt; 133</td>
+<td>99%</td>
+<td>287.1</td>
+<td>85.3</td>
+<td>132.1</td>
+</tr>
+<tr>
+<td>1–133</td>
+<td>95%</td>
+<td>173.8</td>
+<td>60.3</td>
+<td>93.4</td>
+</tr>
+<tr>
+<td>1–133</td>
+<td>99%</td>
+<td>242.1</td>
+<td>85.3</td>
+<td>132.1</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>轴倾角：侧视图上过眼椭球中心画 <strong>β = 12°</strong>、前低后高的斜线为长轴；</li>
+<li>
+<p>中心点定位公式：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Xc  = L1 + 664 + 0.587×L6 - 0.176×H30 - 12.5×t      （t=1 有离合器，t=0 无离合器）
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Ycl = W20 - 32.5
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Ycr = W20 + 32.5
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Zc  = H8 + 638 + H30
+</span></code></pre></div>
+</li>
+</ul>
+<h3 id="_15">示例<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>头部包络线的形成方法是把**平均头部线样板**放在眼椭圆样板上，让样板上的眼点沿眼椭圆上半部运动、并保持两样板的身坐标平行，头部线的运动包络即为头部包络线：</p>
+<p><img alt="SJ 9-2008 第7页：图6 头部包络线的形成（头部线样板沿眼椭圆上半部运动的包络）" src="../images/sj09-p10.png" /></p>
+<h3 id="_16">注意事项<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>不同市场的人体尺寸不同</strong>：SAE 眼椭球/头部包络面源自北美人群统计，直接套用到其他市场需谨慎；知识库中的企业标准以 SAE 数据为基础编写，项目上若有目标市场人体数据应优先采用。</li>
+<li>眼椭球/头部包络面是**统计**图形工具，其百分位是概率含义，不等于"某个人"；用它定义的间隙（如 W27/W35/H35）应理解为"满足 P% 人群"。</li>
+<li>头部包络面的轴倾角规则不同：**可调座椅**侧视图上有 12° 倾角（同眼椭圆），**不可调座椅**没有倾角。</li>
+</ul>
+<h2 id="_17">待人工补充<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">以下条目在知识库中为扫描图像版或无文本层，需人工阅读后补齐</p>
+<p>本页上述内容覆盖了可直接文本解析的条款。以下文件在《总布置》知识库中存在，
+但**无法自动提取正文**，相关细节需人工补充：</p>
+<ul>
+<li><code>SJ 12   A类汽车驾驶员适意位置线设计规范</code> —— SgRP 曲线的具体绘制步骤（本页仅引用）</li>
+<li><code>SJ 6-2008</code> 附录 A 的图示（H 点分布范围示意）与 <code>SJ 9-2008</code> 附录 A 的分布图 A.1～A.4</li>
+<li><code>SJ 15-2008</code> 附录 A 的 SAE 表格页（为图片，无文本层）</li>
+<li>知识库中以下文件虽相关但因读取问题**未采用**：<code>AEM-A5-001 人体布置流程</code>、
+  <code>AEM-A5-105 眼椭圆头部包络制作及周边间隙校核规范</code>、<code>AEM-A0-011 样车H点确定规范</code></li>
+</ul>
+<p>建议：在 IMA 客户端中打开对应文件补充条款，或按"规范编号 + 页码"方式人工引用。</p>
+</div>
+<hr />
+<h2 id="_18">下一步阅读<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../reach/">操作可达性</a>：由坐姿推出的操纵件布置与手伸及界面</li>
+<li><a href="../vision/">视野校核</a>：V 点/P 点/E 点在校核中的实际用法</li>
+<li><a href="../comfort/">空间与进出便利性</a>：头部包络面与乘坐空间评价</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/kangkang530/kangyifan_pkg" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.path", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/benchmark.js"></script>
+      
+        <script src="../../javascripts/auth.js"></script>
+      
+    
+  </body>
+</html>
