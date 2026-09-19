@@ -19,7 +19,7 @@
 
 1. 注册/登录 [GitHub](https://github.com)
 2. 点击 "New repository" 创建新仓库
-3. 仓库名建议：`auto-layout-kb`
+3. 仓库名建议：`kangyifan_pkg`
 4. 设置为 Public（公开）
 
 ### 2. 推送代码到 GitHub
@@ -29,7 +29,7 @@
 git init
 
 # 添加远程仓库
-git remote add origin https://github.com/你的用户名/auto-layout-kb.git
+git remote add origin https://github.com/kangkang530/kangyifan_pkg.git
 
 # 添加所有文件
 git add .
@@ -46,11 +46,11 @@ git push -u origin main
 
 ```yaml
 # 修改 site_url 为你的 GitHub Pages 地址
-site_url: https://你的用户名.github.io/auto-layout-kb/
+site_url: https://kangkang530.github.io/kangyifan_pkg/
 
 # 修改 repo_url
-repo_url: https://github.com/你的用户名/auto-layout-kb
-repo_name: auto-layout-kb
+repo_url: https://github.com/kangkang530/kangyifan_pkg
+repo_name: kangyifan_pkg
 edit_uri: edit/main/docs/
 ```
 
@@ -101,7 +101,7 @@ jobs:
 
 ### 6. 访问站点
 
-访问：`https://你的用户名.github.io/auto-layout-kb/`
+访问：`https://kangkang530.github.io/kangyifan_pkg/`
 
 !!! success "自动部署"
     配置完成后，每次推送代码到 main 分支，GitHub Actions 会自动构建并部署。
@@ -171,8 +171,8 @@ sudo apt install python3 python3-pip python3-venv git
 
 # 克隆项目
 cd /var/www
-git clone https://github.com/你的用户名/auto-layout-kb.git
-cd auto-layout-kb
+git clone https://github.com/kangkang530/kangyifan_pkg.git
+cd kangyifan_pkg
 
 # 创建虚拟环境
 python3 -m venv venv
@@ -192,7 +192,7 @@ mkdocs build
 sudo apt install nginx
 
 # 创建配置文件
-sudo nano /etc/nginx/sites-available/auto-layout-kb
+sudo nano /etc/nginx/sites-available/kangyifan_pkg
 ```
 
 配置内容：
@@ -202,7 +202,7 @@ server {
     listen 80;
     server_name your-domain.com;    # 替换为你的域名或IP
 
-    root /var/www/auto-layout-kb/site;    # 指向 site 目录
+    root /var/www/kangyifan_pkg/site;    # 指向 site 目录
     index index.html;
 
     location / {
@@ -216,7 +216,7 @@ server {
 
 ```bash
 # 启用站点
-sudo ln -s /etc/nginx/sites-available/auto-layout-kb /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/kangyifan_pkg /etc/nginx/sites-enabled/
 
 # 测试配置
 sudo nginx -t
@@ -246,7 +246,7 @@ sudo systemctl status certbot.timer
 #!/bin/bash
 # 自动部署脚本
 
-cd /var/www/auto-layout-kb
+cd /var/www/kangyifan_pkg
 
 # 拉取最新代码
 git pull origin main
@@ -348,7 +348,7 @@ mkdocs gh-deploy
 
 ```bash
 # 在服务器执行
-cd /var/www/auto-layout-kb
+cd /var/www/kangyifan_pkg
 ./deploy.sh
 ```
 
@@ -379,7 +379,7 @@ sudo tail -f /var/log/nginx/error.log
 git push
 
 # 服务器备份（打包项目）
-tar -czf backup.tar.gz /var/www/auto-layout-kb
+tar -czf backup.tar.gz /var/www/kangyifan_pkg
 ```
 
 ## 常见部署问题

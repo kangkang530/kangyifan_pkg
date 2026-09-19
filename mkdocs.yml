@@ -1,8 +1,9 @@
-site_name: 汽车总布置知识库
+site_name: 乘用车上车体总布置知识库
 site_url: https://kangkang530.github.io/kangyifan_pkg/
 site_description: >-
   面向汽车设计与总布置方向在校学生、初级工程师及自学者的系统性知识库，
-  涵盖整车参数、动力总成、底盘、车身、电气系统布置及实战案例。
+  涵盖上车体总布置基础、整车参数、IP&CNSL、门板立柱顶棚、前后端区域、
+  人机舒适性、整车断面与整车开发流程。
 site_author: 个人知识库
 
 repo_url: https://github.com/kangkang530/kangyifan_pkg
@@ -63,15 +64,17 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/your-username/auto-layout-kb
+      link: https://github.com/kangkang530/kangyifan_pkg
   generator: false
 
 extra_css:
   - stylesheets/extra.css
   - stylesheets/benchmark.css
+  - stylesheets/auth.css
 
 extra_javascript:
   - javascripts/benchmark.js
+  - javascripts/auth.js
 
 markdown_extensions:
   - abbr
@@ -122,7 +125,7 @@ plugins:
 
 nav:
   - 首页: index.md
-  - 总布置基础:
+  - 上车体总布置基础:
     - 概述: basics/overview.md
     - 工作流程: basics/workflow.md
     - 工程师职责: basics/responsibilities.md
@@ -132,26 +135,32 @@ nav:
     - 质量参数: parameters/mass.md
     - 性能参数: parameters/performance.md
     - 对标数据库: parameters/benchmark.md
-  - 动力总成布置:
-    - 发动机布置: powertrain/engine.md
-    - 电机布置: powertrain/motor.md
-    - 传动系统: powertrain/transmission.md
-  - 底盘系统布置:
-    - 悬架系统: chassis/suspension.md
-    - 转向系统: chassis/steering.md
-    - 制动系统: chassis/braking.md
-  - 车身布置:
-    - 乘员舱: body/cabin.md
-    - 人机工程: body/ergonomics.md
-    - 行李与储物: body/cargo.md
-  - 电气与新能源:
-    - 线束布置: electrical/wiring.md
-    - 电池布置: electrical/battery.md
-    - 热管理系统: electrical/thermal.md
-  - 总布置案例:
-    - 燃油轿车: cases/sedan.md
-    - SUV与MPV: cases/suv.md
-    - 纯电动平台: cases/ev.md
+  - IP&CNSL 区域总布置:
+    - IP 布置: ip-cnsl/ip.md
+    - CNSL 布置: ip-cnsl/cnsl.md
+    - 校核标准: ip-cnsl/check.md
+  - 门板&立柱&顶棚区域总布置:
+    - 门板布置: door-trim/door.md
+    - 立柱布置: door-trim/pillar.md
+    - 顶棚布置: door-trim/roof.md
+    - 校核标准: door-trim/check.md
+  - 前后端区域总布置:
+    - 前端区域: front-rear/front.md
+    - 后端区域: front-rear/rear.md
+    - 校核标准: front-rear/check.md
+  - 人机舒适性标准:
+    - 坐姿与H点: ergonomics/posture.md
+    - 操作可达性: ergonomics/reach.md
+    - 视野校核: ergonomics/vision.md
+    - 空间与进出便利性: ergonomics/comfort.md
+  - 整车断面:
+    - 断面开发流程: sections/process.md
+    - 断面设计方法: sections/method.md
+    - 典型断面清单: sections/library.md
+  - 整车开发流程:
+    - 流程概述: process/overview.md
+    - 关键里程碑: process/milestones.md
+    - 阶段交付物: process/deliverables.md
   - 工具与资源:
     - 软件工具: tools/software.md
     - 学习资源: tools/learning.md

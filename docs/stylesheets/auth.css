@@ -1,0 +1,204 @@
+/* ============================================================
+   MkDocs 站点登录系统样式
+   ============================================================ */
+
+/* ---- 右上角按钮容器 ---- */
+.auth-widget {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 0.4rem;
+  flex-shrink: 0;
+}
+
+.auth-user-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--md-default-fg-color, #424242);
+  white-space: nowrap;
+}
+
+/* ---- 角色徽章 ---- */
+.auth-role-badge {
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.auth-role-admin {
+  background-color: var(--md-primary-fg-color, #4051b5);
+  color: var(--md-primary-bg-color, #fff);
+}
+
+.auth-role-user {
+  background-color: transparent;
+  color: var(--md-default-fg-color--light, #757575);
+  border: 1px solid var(--md-default-fg-color--lightest, #ccc);
+}
+
+/* ---- 通用按钮 ---- */
+.auth-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s;
+  white-space: nowrap;
+}
+
+.auth-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* 登录按钮 */
+.auth-btn-in {
+  background-color: var(--md-primary-fg-color, #4051b5);
+  color: var(--md-primary-bg-color, #fff);
+}
+.auth-btn-in:hover {
+  background-color: var(--md-accent-fg-color, #526cfe);
+}
+
+/* 退出按钮 */
+.auth-btn-out {
+  background-color: transparent;
+  color: var(--md-default-fg-color, #424242);
+  border: 1px solid var(--md-default-fg-color--lightest, #ccc);
+}
+.auth-btn-out:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+/* ---- 登录弹窗遮罩 ---- */
+.auth-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+  animation: auth-fade 0.2s ease;
+}
+
+/* ---- 登录卡片 ---- */
+.auth-card {
+  background: var(--md-default-bg-color, #fff);
+  border-radius: 14px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 380px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  animation: auth-pop 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-card-title {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--md-default-fg-color, #333);
+}
+
+.auth-card-hint {
+  margin: 0 0 1.5rem 0;
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light, #757575);
+}
+
+/* ---- 表单 ---- */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.auth-field label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--md-default-fg-color, #333);
+}
+
+.auth-field input {
+  padding: 0.6rem 0.75rem;
+  border: 1.5px solid var(--md-default-fg-color--lightest, #ddd);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: var(--md-default-bg-color, #fff);
+  color: var(--md-default-fg-color, #333);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.auth-field input:focus {
+  outline: none;
+  border-color: var(--md-primary-fg-color, #4051b5);
+  box-shadow: 0 0 0 3px rgba(64, 81, 181, 0.12);
+}
+
+/* ---- 错误提示 ---- */
+.auth-err {
+  color: #f44336;
+  font-size: 0.8rem;
+  min-height: 1.1rem;
+}
+
+/* ---- 按钮行 ---- */
+.auth-btn-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.auth-btn-go {
+  flex: 1;
+  background-color: var(--md-primary-fg-color, #4051b5);
+  color: var(--md-primary-bg-color, #fff);
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.auth-btn-go:hover {
+  background-color: var(--md-accent-fg-color, #526cfe);
+}
+
+.auth-btn-cancel {
+  flex: 1;
+  background: transparent;
+  color: var(--md-default-fg-color--light, #757575);
+  border: 1.5px solid var(--md-default-fg-color--lightest, #ddd);
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.auth-btn-cancel:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* ---- 动画 ---- */
+@keyframes auth-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes auth-pop {
+  from { opacity: 0; transform: translateY(16px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0)    scale(1);    }
+}
+
+/* ---- 移动端适配 ---- */
+@media (max-width: 767px) {
+  .auth-user-name { display: none; }
+  .auth-card { padding: 1.5rem; }
+}

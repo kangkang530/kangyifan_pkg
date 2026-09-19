@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" rx="16" fill="#eef1fb"/>
+  <rect x="40" y="40" width="720" height="320" rx="12" fill="#ffffff" stroke="#c5cae9" stroke-width="2"/>
+  <circle cx="360" cy="140" r="26" fill="#3949ab"/>
+  <path d="M360 166 L380 240" stroke="#3949ab" stroke-width="12" stroke-linecap="round"/>
+  <path d="M380 240 L480 250" stroke="#5c6bc0" stroke-width="12" stroke-linecap="round"/>
+  <path d="M480 250 L500 310" stroke="#5c6bc0" stroke-width="12" stroke-linecap="round"/>
+  <path d="M370 190 L450 210" stroke="#7986cb" stroke-width="10" stroke-linecap="round"/>
+  <rect x="330" y="230" width="70" height="60" rx="10" fill="#c5cae9"/>
+  <text x="400" y="96" font-family="sans-serif" font-size="30" font-weight="bold" fill="#3f51b5" text-anchor="middle">人机坐姿示意图</text>
+  <text x="400" y="345" font-family="sans-serif" font-size="18" fill="#7986cb" text-anchor="middle">H 点 · 坐姿角度</text>
+</svg>

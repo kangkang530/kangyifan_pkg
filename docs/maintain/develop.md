@@ -70,8 +70,8 @@ brew install git
 ### 1. 克隆项目（已有仓库）
 
 ```bash
-git clone https://github.com/your-username/auto-layout-kb.git
-cd auto-layout-kb
+git clone https://github.com/kangkang530/kangyifan_pkg.git
+cd kangyifan_pkg
 ```
 
 ### 2. 创建虚拟环境
@@ -145,7 +145,7 @@ mkdocs build --clean
 ## 目录结构说明
 
 ```
-auto-layout-kb/
+kangyifan_pkg/
 ├── docs/                    # 内容目录（Markdown 文件）
 │   ├── index.md            # 首页
 │   ├── basics/             # 总布置基础

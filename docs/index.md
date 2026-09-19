@@ -13,10 +13,101 @@ hide:
 **系统化整理乘用车上车体设计知识，面向在校学生、初级工程师与自学者**
 
 [开始阅读](basics/overview.md){ .md-button .md-button--primary }
-[总布置案例](cases/sedan.md){ .md-button }
+[整车断面](sections/process.md){ .md-button }
 [维护指南](maintain/update.md){ .md-button }
 
 </div>
+
+---
+
+## 🗺️ 知识结构总览
+
+```mermaid
+flowchart LR
+  N0["乘用车上车体总布置知识库"]
+  N1["上车体总布置基础"]
+  N0 --> N1
+  N2["概述 什么是总布置"]
+  N1 --> N2
+  N3["工作流程 五阶段六门禁"]
+  N1 --> N3
+  N4["工程师职责"]
+  N1 --> N4
+  N5["法规与标准"]
+  N1 --> N5
+  N6["整车参数"]
+  N0 --> N6
+  N7["尺寸参数"]
+  N6 --> N7
+  N8["质量参数"]
+  N6 --> N8
+  N9["性能参数"]
+  N6 --> N9
+  N10["对标数据库"]
+  N6 --> N10
+  N11["IP 与 CNSL 区域"]
+  N0 --> N11
+  N12["IP 布置"]
+  N11 --> N12
+  N13["CNSL 布置"]
+  N11 --> N13
+  N14["校核标准"]
+  N11 --> N14
+  N15["门板 立柱 顶棚"]
+  N0 --> N15
+  N16["门板布置"]
+  N15 --> N16
+  N17["立柱布置"]
+  N15 --> N17
+  N18["顶棚布置"]
+  N15 --> N18
+  N19["校核标准"]
+  N15 --> N19
+  N20["前后端区域"]
+  N0 --> N20
+  N21["前端区域"]
+  N20 --> N21
+  N22["后端区域"]
+  N20 --> N22
+  N23["校核标准"]
+  N20 --> N23
+  N24["人机舒适性"]
+  N0 --> N24
+  N25["坐姿与 H 点"]
+  N24 --> N25
+  N26["操作可达性"]
+  N24 --> N26
+  N27["视野校核"]
+  N24 --> N27
+  N28["空间与进出便利性"]
+  N24 --> N28
+  N29["整车断面"]
+  N0 --> N29
+  N30["断面开发流程"]
+  N29 --> N30
+  N31["断面设计方法"]
+  N29 --> N31
+  N32["典型断面清单"]
+  N29 --> N32
+  N33["整车开发流程"]
+  N0 --> N33
+  N34["流程概述"]
+  N33 --> N34
+  N35["关键里程碑"]
+  N33 --> N35
+  N36["阶段交付物"]
+  N33 --> N36
+  N37["工具与资源"]
+  N0 --> N37
+  N38["软件工具"]
+  N37 --> N38
+  N39["学习资源"]
+  N37 --> N39
+  N40["职业发展"]
+  N37 --> N40
+```
+
+> 脑图由站点内的 Mermaid 直接在 Markdown 中绘制，与左侧导航一一对应；修改导航时可同步更新本图。
 
 ---
 
@@ -24,73 +115,81 @@ hide:
 
 <div class="grid cards" markdown>
 
-- :material-book-open-variant: **总布置基础**
+-  **上车体总布置基础**
 
     ---
 
-    了解总布置工程师的角色、工作流程与核心职责，建立全局认知。
+    了解上车体总布置工程师的角色、工作流程与核心职责，建立全局认知。
 
-    [:octicons-arrow-right-24: 查看基础](basics/overview.md)
+    [总布置基础 - 详情](basics/overview.md)
 
-- :material-ruler: **整车参数**
+-  **整车参数**
 
     ---
 
     尺寸、质量、性能三大参数体系，总布置设计的约束基础。
 
-    [:octicons-arrow-right-24: 查看参数](parameters/dimensions.md)
+    [整车参数 - 详情](parameters/dimensions.md)
 
-- :material-monitor-dashboard: **IP&CNSL区域总布置**
+-  **IP&CNSL 区域总布置**
 
     ---
 
     仪表&副仪表区域的零部件布置及校核标准。
 
-    [:octicons-arrow-right-24: 查看动力](powertrain/engine.md)
+    [IP&CNSL 总布置 - 详情](ip-cnsl/ip.md)
 
-- :material-car-door: **门板&立柱&顶棚区域总布置**
+-  **门板&立柱&顶棚区域总布置**
 
     ---
 
     门板&立柱&顶棚区域的零部件布置及校核标准。
 
-    [:octicons-arrow-right-24: 查看底盘](chassis/suspension.md)
+    [门板&立柱&顶棚区域总布置 - 详情](door-trim/door.md)
 
-</div>
-
-<div class="grid cards" markdown>
-
-- :material-car-hatchback: **前后端区域总布置**
+-  **前后端区域总布置**
 
     ---
 
     前后端区域的零部件布置及校核标准。
 
-    [:octicons-arrow-right-24: 查看车身](body/cabin.md)
+    [前后端区域总布置 - 详情](front-rear/front.md)
 
-- :material-seat-recline-normal: **人机舒适性标准**
+-  **人机舒适性标准**
 
     ---
 
     人机舒适性要求及校核方法。
 
-    [:octicons-arrow-right-24: 查看电气](electrical/wiring.md)
+    [人机舒适性标准 - 详情](ergonomics/posture.md)
 
-- :material-layers-triple: **整车断面**
+</div>
+
+<div class="grid cards" markdown>
+
+-  **整车断面**
 
     ---
 
     断面开发流程、方法。
 
-    [:octicons-arrow-right-24: 查看案例](cases/sedan.md)
+    [整车断面 - 详情](sections/process.md)
 
-- :material-tools: **工具与资源**
+-  **整车开发流程**
+
+    ---
+
+    整车开发流程介绍。
+
+    [整车开发流程 - 详情](process/overview.md)
+
+-  **工具与资源**
 
     ---
 
     CATIA 等软件工具、学习资料与职业发展路径。
 
-    [:octicons-arrow-right-24: 查看资源](tools/software.md)
+    [工具与资源 - 详情](tools/software.md)
 
 </div>
 
@@ -100,8 +199,7 @@ hide:
 
 - **系统化**：从基础概念到实战案例，覆盖总布置全流程
 - **实用导向**：结合真实工程参数与设计经验，可直接参考
-- **持续更新**：作为个人知识备份与输出，不断积累完善
-- **开源共享**：基于 MkDocs Material 构建，支持社区贡献
+- **持续更新**：作为团队知识备份与输出，不断积累完善
 
 ## 🎯 适合人群
 
@@ -109,13 +207,12 @@ hide:
 |------|------|
 | 在校学生 | 建立总布置知识体系，为求职做准备 |
 | 初级工程师 | 快速上手工作，理解各系统协调关系 |
-| 转行/自学者 | 系统了解乘用车上车体，少走弯路 |
-| 资深工程师 | 作为知识备份与输出，便于回顾查阅 |
+| 高级工程师 | 作为知识备份与输出，形成企业级数据资产|
 
 ---
 
 !!! tip "如何使用本知识库"
     1. **新手入门**：从 [总布置基础](basics/overview.md) 开始，建立全局认知
     2. **按需查阅**：利用左侧导航栏和顶部搜索快速定位内容
-    3. **案例学习**：结合 [总布置案例](cases/sedan.md) 理解理论如何落地
+    3. **断面学习**：结合 [整车断面](sections/process.md) 理解理论如何落地
     4. **持续关注**：内容会持续更新，欢迎 Star 收藏

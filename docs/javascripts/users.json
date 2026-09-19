@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "username": "kangyifan",
+      "salt": "86d1116570e3aa12076252ca43e326e6",
+      "password_hash": "0684d1197e78d272f8de678bcd2a7f0713e6464a27d51a1015b3939af1c3d6a2",
+      "role": "admin"
+    }
+  ]
+}
